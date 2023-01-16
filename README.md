@@ -1,7 +1,7 @@
 # Gale-Shapley stable matching
 
 Overview:
-Initially, all individuals are is unmarried. An unmarried man m chooses
+Initially, all individuals are unmarried. An unmarried man m chooses
 the woman w who is at the top of his preference list and proposes to her. The
 woman remains engaged from the point at which she receives her ﬁrst
 proposal; and the sequence of partners to which she is engaged gets better and
