@@ -85,8 +85,8 @@ int main() {
     while(!freeMen.empty()){
         // Take a free man from the list of free men
         auto m = freeMen.front();
+        // Take the man's choice list and select his first choice top w of women
         auto choiceList = menChoice[m];
-
         for (auto ptr = choiceList.begin(); ptr != choiceList.end(); ++ptr){
             auto w = *ptr;
             // If w is free then (m, w) become engaged
@@ -94,13 +94,11 @@ int main() {
                 couples[w] = m;
                 break;
             }
-
-            auto firstMan = couples[w];
-
             // Check if w prefers m’ to m
-            if (checkPreference(womenChoice[w], m, firstMan)){
+            auto otherMan = couples[w];
+            if (checkPreference(womenChoice[w], m, otherMan)){
                 // m becomes free if w prefers m' to m
-                freeMen.push(firstMan);
+                freeMen.push(otherMan);
                 // (m, w) become engaged
                 couples[w] = m;
                 break;
