@@ -16,4 +16,5 @@ Submit the source code of your program and a screenshot of your program running.
 
 Reference:
 [1] Kleinberg, J., & Tardos, E. (2012). Algorithm Design. Pearson Higher Ed.
+
 [2] CSC 3430 Winter 2023, Class Assignment.
